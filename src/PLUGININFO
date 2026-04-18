@@ -1,5 +1,5 @@
 Name = "Upload Clear Inactive"
-Version = "2026-04-18r00"
+Version = "2026-04-18r01"
 Author = "GooglyBlox"
 Authors = ["GooglyBlox"]
 Description = "Adds a clear-menu option for Cancelled / Failed / User Logged Off uploads."

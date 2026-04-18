@@ -36,8 +36,22 @@ class Plugin(BasePlugin):
         if self._install_scheduled:
             return
 
+        if self._is_menu_installed():
+            return
+
         self._install_scheduled = True
         events.invoke_main_thread(self._install_menu_item)
+
+    def _is_menu_installed(self):
+        if self._menu is None or not self._layout_installed:
+            return False
+
+        try:
+            item_labels = set(getattr(self._menu, "items", {}))
+        except Exception:
+            return False
+
+        return "Cancelled / Failed / User Logged Off" in item_labels
 
     def _find_main_window(self):
         for obj in gc.get_objects():

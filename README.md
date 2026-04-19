@@ -6,6 +6,8 @@ This Nicotine+ plugin adds one extra entry to the uploads `Clear All` menu:
 
 It clears uploads whose status is cancelled, failed, or user logged off, without clearing finished uploads.
 
+<img width="458" height="545" alt="image" src="https://github.com/user-attachments/assets/3331a9c1-4f55-4ee3-95c5-51ebf676ab27" />
+
 ## What It Changes
 
 Nicotine+'s default uploads clear menu already has individual entries for `Cancelled`, `Failed`, and `User Logged Off`. This plugin adds a grouped action for those three statuses in the grouped section at the top of the submenu.
